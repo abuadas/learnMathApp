@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#A020F0">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_math_quiz"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+
+        android:layout_margin ="25dp"/>
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_margin ="25dp"
+        android:textColor="@color/black"/>
+
+    <RadioGroup
+        android:id="@+id/ansRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/ansRadioBtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="25dp"
+            android:onClick="ansRadioBtn1"/>
+
+        <RadioButton
+            android:id="@+id/ansRadioBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="25dp"
+            android:onClick="ansRadioBtn2"/>
+
+        <RadioButton
+            android:id="@+id/ansRadioBtn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="25dp"
+            android:onClick="ansRadioBtn3"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_gravity="center"
+        android:backgroundTint="#BF7FFF"
+        android:layout_margin ="25dp"
+        android:textSize="16sp"/>
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">learnMathApp</string>
+    <string name="welcome_to_math_quiz">Welcome to Math Quiz!</string>
+</resources>
